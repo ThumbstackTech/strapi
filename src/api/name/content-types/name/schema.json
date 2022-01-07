@@ -21,6 +21,12 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "names"
+    },
+    "card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::card.card",
+      "inversedBy": "name"
     }
   }
 }

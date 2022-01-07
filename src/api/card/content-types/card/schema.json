@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cards",
+  "info": {
+    "singularName": "card",
+    "pluralName": "cards",
+    "displayName": "card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Cuisine": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "biginteger"
+    },
+    "IMAGE": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::name.name",
+      "inversedBy": "card"
+    }
+  }
+}
