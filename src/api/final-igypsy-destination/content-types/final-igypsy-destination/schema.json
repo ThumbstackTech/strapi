@@ -1,0 +1,121 @@
+{
+  "kind": "collectionType",
+  "collectionName": "final_igypsy_destinations",
+  "info": {
+    "singularName": "final-igypsy-destination",
+    "pluralName": "final-igypsy-destinations",
+    "displayName": "final_igypsy_destination",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Destination_Code_City": {
+      "type": "string",
+      "required": true
+    },
+    "Content_code": {
+      "type": "string"
+    },
+    "Name_1": {
+      "type": "string"
+    },
+    "Name_2": {
+      "type": "string"
+    },
+    "Name_3": {
+      "type": "string"
+    },
+    "Category_1": {
+      "type": "string"
+    },
+    "Category_2": {
+      "type": "string"
+    },
+    "Category_3": {
+      "type": "string"
+    },
+    "Category_4": {
+      "type": "string"
+    },
+    "Category_5": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "biginteger"
+    },
+    "Cost": {
+      "type": "biginteger"
+    },
+    "Time_Needed_in_hrs": {
+      "type": "integer"
+    },
+    "Public_Transport": {
+      "type": "string",
+      "required": true
+    },
+    "cab": {
+      "type": "enumeration",
+      "enum": [
+        "Available",
+        "Not_Available",
+        "Easy_to_Get",
+        "Hard_to_Get"
+      ],
+      "required": true,
+      "default": "Available"
+    },
+    "Expert_Rating": {
+      "type": "enumeration",
+      "enum": [
+        "FiveStar",
+        "FourStar",
+        "ThreeStar"
+      ],
+      "required": true,
+      "default": "FiveStar"
+    },
+    "Social_Rating": {
+      "type": "enumeration",
+      "enum": [
+        "FiveStar",
+        "FourStar",
+        "ThreeStar"
+      ],
+      "required": true,
+      "default": "FiveStar"
+    },
+    "Content_1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "Content_2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Link_1": {
+      "type": "richtext",
+      "default": "https://zyx.com",
+      "required": true
+    },
+    "Link_2": {
+      "type": "richtext"
+    },
+    "Link_3": {
+      "type": "richtext"
+    }
+  }
+}
