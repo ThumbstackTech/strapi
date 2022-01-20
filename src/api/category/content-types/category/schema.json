@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "names": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::name.name",
-      "inversedBy": "categories"
-    },
     "shahi": {
       "type": "richtext"
     }

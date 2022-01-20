@@ -43,9 +43,6 @@
     "Category_5": {
       "type": "string"
     },
-    "Location": {
-      "type": "float"
-    },
     "Cost": {
       "type": "biginteger"
     },
@@ -141,6 +138,14 @@
         "ChineseFood",
         "ItalianFood"
       ]
+    },
+    "Location_Latitude": {
+      "type": "float",
+      "required": true
+    },
+    "Location_Longitude": {
+      "required": true,
+      "type": "float"
     }
   }
 }
