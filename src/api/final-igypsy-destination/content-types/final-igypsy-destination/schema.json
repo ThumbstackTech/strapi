@@ -88,23 +88,24 @@
       "default": "FiveStar"
     },
     "Content_1": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
       "type": "media",
       "multiple": true,
-      "required": true
-    },
-    "Content_2": {
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
+      ]
+    },
+    "Content_2": {
       "type": "media",
-      "multiple": true
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "Link_1": {
       "type": "richtext",
@@ -116,6 +117,14 @@
     },
     "Link_3": {
       "type": "richtext"
+    },
+    "cat": {
+      "type": "enumeration",
+      "enum": [
+        "BritishCooking",
+        "ChineseFood",
+        "ItalianFood"
+      ]
     }
   }
 }
