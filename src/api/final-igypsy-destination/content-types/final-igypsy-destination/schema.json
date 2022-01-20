@@ -44,7 +44,7 @@
       "type": "string"
     },
     "Location": {
-      "type": "biginteger"
+      "type": "float"
     },
     "Cost": {
       "type": "biginteger"
@@ -119,6 +119,22 @@
       "type": "richtext"
     },
     "cat": {
+      "type": "enumeration",
+      "enum": [
+        "BritishCooking",
+        "ChineseFood",
+        "ItalianFood"
+      ]
+    },
+    "cat_2": {
+      "type": "enumeration",
+      "enum": [
+        "BritishCooking",
+        "ChineseFood",
+        "ItalianFood"
+      ]
+    },
+    "cat_3": {
       "type": "enumeration",
       "enum": [
         "BritishCooking",
