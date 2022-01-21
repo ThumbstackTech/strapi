@@ -55,12 +55,6 @@
       "type": "richtext",
       "required": true
     },
-    "Expert_Rating": {
-      "type": "integer",
-      "required": true,
-      "max": 5,
-      "min": 1
-    },
     "Social_Rating": {
       "type": "integer",
       "required": true,
@@ -90,13 +84,14 @@
       "mappedBy": "final_igypsy_destination"
     },
     "Content": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }
