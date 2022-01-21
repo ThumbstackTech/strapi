@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * travel service.
+ * name service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::travel.travel');
+module.exports = createCoreService('api::name.name');

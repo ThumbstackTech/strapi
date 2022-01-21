@@ -1,25 +1,24 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "links",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "category",
-    "description": ""
+    "singularName": "link",
+    "pluralName": "links",
+    "displayName": "Link"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Category_title": {
+    "Link_url": {
       "type": "string"
     },
     "final_igypsy_destinations": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::final-igypsy-destination.final-igypsy-destination",
-      "mappedBy": "category"
+      "mappedBy": "link"
     }
   }
 }

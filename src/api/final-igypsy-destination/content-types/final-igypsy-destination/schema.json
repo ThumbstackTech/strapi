@@ -14,34 +14,13 @@
   "attributes": {
     "Destination_Code_City": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "Content_code": {
-      "type": "string"
-    },
-    "Name_1": {
-      "type": "string"
-    },
-    "Name_2": {
-      "type": "string"
-    },
-    "Name_3": {
-      "type": "string"
-    },
-    "Category_1": {
-      "type": "string"
-    },
-    "Category_2": {
-      "type": "string"
-    },
-    "Category_3": {
-      "type": "string"
-    },
-    "Category_4": {
-      "type": "string"
-    },
-    "Category_5": {
-      "type": "string"
+      "type": "string",
+      "unique": true,
+      "required": true
     },
     "Cost": {
       "type": "biginteger"
@@ -64,81 +43,6 @@
       "required": true,
       "default": "Available"
     },
-    "Expert_Rating": {
-      "type": "enumeration",
-      "enum": [
-        "FiveStar",
-        "FourStar",
-        "ThreeStar"
-      ],
-      "required": true,
-      "default": "FiveStar"
-    },
-    "Social_Rating": {
-      "type": "enumeration",
-      "enum": [
-        "FiveStar",
-        "FourStar",
-        "ThreeStar"
-      ],
-      "required": true,
-      "default": "FiveStar"
-    },
-    "Content_1": {
-      "type": "media",
-      "multiple": true,
-      "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
-    },
-    "Content_2": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
-    },
-    "Link_1": {
-      "type": "richtext",
-      "default": "https://zyx.com",
-      "required": true
-    },
-    "Link_2": {
-      "type": "richtext"
-    },
-    "Link_3": {
-      "type": "richtext"
-    },
-    "cat": {
-      "type": "enumeration",
-      "enum": [
-        "BritishCooking",
-        "ChineseFood",
-        "ItalianFood"
-      ]
-    },
-    "cat_2": {
-      "type": "enumeration",
-      "enum": [
-        "BritishCooking",
-        "ChineseFood",
-        "ItalianFood"
-      ]
-    },
-    "cat_3": {
-      "type": "enumeration",
-      "enum": [
-        "BritishCooking",
-        "ChineseFood",
-        "ItalianFood"
-      ]
-    },
     "Location_Latitude": {
       "type": "float",
       "required": true
@@ -146,6 +50,50 @@
     "Location_Longitude": {
       "required": true,
       "type": "float"
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Expert_Rating": {
+      "type": "integer",
+      "required": true,
+      "max": 5,
+      "min": 1
+    },
+    "Social_Rating": {
+      "type": "integer",
+      "required": true,
+      "max": 5,
+      "min": 1
+    },
+    "Location_Url": {
+      "type": "string",
+      "required": true
+    },
+    "names": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::name.name",
+      "mappedBy": "final_igypsy_destination"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "final_igypsy_destinations"
+    },
+    "link": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::link.link",
+      "inversedBy": "final_igypsy_destinations"
+    },
+    "content": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::content.content",
+      "inversedBy": "final_igypsy_destinations"
     }
   }
 }

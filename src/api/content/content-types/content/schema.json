@@ -1,25 +1,30 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "contents",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "category",
-    "description": ""
+    "singularName": "content",
+    "pluralName": "contents",
+    "displayName": "Content"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Category_title": {
-      "type": "string"
+    "Content": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
     },
     "final_igypsy_destinations": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::final-igypsy-destination.final-igypsy-destination",
-      "mappedBy": "category"
+      "mappedBy": "content"
     }
   }
 }

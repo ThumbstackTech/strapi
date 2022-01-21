@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  travel controller
+ *  content controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::travel.travel');
+module.exports = createCoreController('api::content.content');

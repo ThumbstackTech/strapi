@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "names",
+  "info": {
+    "singularName": "name",
+    "pluralName": "names",
+    "displayName": "Name",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "final_igypsy_destination": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::final-igypsy-destination.final-igypsy-destination",
+      "inversedBy": "names"
+    }
+  }
+}
