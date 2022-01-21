@@ -55,12 +55,6 @@
       "type": "richtext",
       "required": true
     },
-    "Social_Rating": {
-      "type": "integer",
-      "required": true,
-      "max": 5,
-      "min": 1
-    },
     "Location_Url": {
       "type": "string",
       "required": true
