@@ -14,11 +14,11 @@
     "Link_url": {
       "type": "string"
     },
-    "final_igypsy_destinations": {
+    "final_igypsy_destination": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::final-igypsy-destination.final-igypsy-destination",
-      "mappedBy": "link"
+      "inversedBy": "links"
     }
   }
 }

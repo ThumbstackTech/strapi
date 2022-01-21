@@ -77,23 +77,26 @@
       "target": "api::name.name",
       "mappedBy": "final_igypsy_destination"
     },
-    "category": {
+    "categories": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::category.category",
-      "inversedBy": "final_igypsy_destinations"
+      "mappedBy": "final_igypsy_destination"
     },
-    "link": {
+    "links": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::link.link",
-      "inversedBy": "final_igypsy_destinations"
+      "mappedBy": "final_igypsy_destination"
     },
-    "content": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::content.content",
-      "inversedBy": "final_igypsy_destinations"
+    "Content": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
