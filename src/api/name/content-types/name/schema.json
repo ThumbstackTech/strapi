@@ -4,7 +4,7 @@
   "info": {
     "singularName": "name",
     "pluralName": "names",
-    "displayName": "Name",
+    "displayName": "Food-Type",
     "description": ""
   },
   "options": {
@@ -21,7 +21,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::final-igypsy-destination.final-igypsy-destination",
-      "inversedBy": "names"
+      "inversedBy": "FoodType"
     }
   }
 }

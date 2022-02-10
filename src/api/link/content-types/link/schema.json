@@ -14,9 +14,9 @@
     "Link_url": {
       "type": "string"
     },
-    "final_igypsy_destination": {
+    "final_igypsy_destinations": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::final-igypsy-destination.final-igypsy-destination",
       "inversedBy": "links"
     }

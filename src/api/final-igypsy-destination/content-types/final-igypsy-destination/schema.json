@@ -59,7 +59,7 @@
       "type": "string",
       "required": true
     },
-    "names": {
+    "FoodType": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::name.name",
@@ -73,9 +73,9 @@
     },
     "links": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::link.link",
-      "mappedBy": "final_igypsy_destination"
+      "mappedBy": "final_igypsy_destinations"
     },
     "Content": {
       "type": "media",
@@ -98,6 +98,14 @@
       "max": 5,
       "required": true,
       "min": 1
+    },
+    "Introduction": {
+      "type": "richtext",
+      "required": true
+    },
+    "NameOfPlace": {
+      "type": "string",
+      "required": true
     }
   }
 }
