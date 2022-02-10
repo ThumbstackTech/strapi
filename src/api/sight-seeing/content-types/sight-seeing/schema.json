@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "links",
+  "collectionName": "sight_seeings",
   "info": {
-    "singularName": "link",
-    "pluralName": "links",
-    "displayName": "Link",
+    "singularName": "sight-seeing",
+    "pluralName": "sight-seeings",
+    "displayName": "SightSeeing",
     "description": ""
   },
   "options": {
@@ -12,16 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Link_url": {
-      "type": "string"
-    },
-    "final_igypsy_destinations": {
+    "final_igypsy_destination": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::final-igypsy-destination.final-igypsy-destination",
-      "inversedBy": "links"
+      "inversedBy": "sight_seeings"
     },
-    "Location_Link": {
+    "NameLocationOfSight": {
       "type": "string"
     }
   }

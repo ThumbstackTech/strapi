@@ -106,6 +106,24 @@
     "NameOfPlace": {
       "type": "string",
       "required": true
+    },
+    "theaters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::theater.theater",
+      "mappedBy": "final_igypsy_destination"
+    },
+    "sight_seeings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sight-seeing.sight-seeing",
+      "mappedBy": "final_igypsy_destination"
+    },
+    "tours": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tour.tour",
+      "mappedBy": "final_igypsy_destination"
     }
   }
 }

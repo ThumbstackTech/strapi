@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "links",
+  "collectionName": "tours",
   "info": {
-    "singularName": "link",
-    "pluralName": "links",
-    "displayName": "Link",
+    "singularName": "tour",
+    "pluralName": "tours",
+    "displayName": "Tour",
     "description": ""
   },
   "options": {
@@ -12,16 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Link_url": {
-      "type": "string"
-    },
-    "final_igypsy_destinations": {
+    "final_igypsy_destination": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::final-igypsy-destination.final-igypsy-destination",
-      "inversedBy": "links"
+      "inversedBy": "tours"
     },
-    "Location_Link": {
+    "NameLocationOfTour": {
       "type": "string"
     }
   }
