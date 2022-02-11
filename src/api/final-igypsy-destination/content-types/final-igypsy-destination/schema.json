@@ -15,7 +15,7 @@
     "Destination_Code_City": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Content_code": {
       "type": "string",
