@@ -129,6 +129,15 @@
       "type": "string",
       "required": true,
       "default": "www.xyz.com"
+    },
+    "Theatre": {
+      "type": "string"
+    },
+    "Theatre2": {
+      "type": "string"
+    },
+    "theatre3": {
+      "type": "string"
     }
   }
 }
