@@ -138,6 +138,12 @@
     },
     "theatre3": {
       "type": "string"
+    },
+    "Theatre4": {
+      "type": "string"
+    },
+    "Theatre5": {
+      "type": "string"
     }
   }
 }
