@@ -144,6 +144,27 @@
     },
     "Theatre5": {
       "type": "string"
+    },
+    "Theatre6": {
+      "type": "string"
+    },
+    "Theatre7": {
+      "type": "string"
+    },
+    "Theatre8": {
+      "type": "string"
+    },
+    "Theatre9": {
+      "type": "string"
+    },
+    "Theatre10": {
+      "type": "string"
+    },
+    "Theatre11": {
+      "type": "string"
+    },
+    "Theatre12": {
+      "type": "string"
     }
   }
 }
