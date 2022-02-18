@@ -165,6 +165,42 @@
     },
     "Theatre12": {
       "type": "string"
+    },
+    "TheatreDesc": {
+      "type": "text"
+    },
+    "TheatreDesc2": {
+      "type": "text"
+    },
+    "TheatreDesc3": {
+      "type": "text"
+    },
+    "TheatreDesc4": {
+      "type": "text"
+    },
+    "TheatreDesc5": {
+      "type": "text"
+    },
+    "TheatreDesc6": {
+      "type": "text"
+    },
+    "TheatreDesc7": {
+      "type": "text"
+    },
+    "TheatreDesc8": {
+      "type": "text"
+    },
+    "TheatreDesc9": {
+      "type": "text"
+    },
+    "TheatreDesc10": {
+      "type": "text"
+    },
+    "TheatreDesc11": {
+      "type": "text"
+    },
+    "TheatreDesc12": {
+      "type": "text"
     }
   }
 }
