@@ -201,6 +201,15 @@
     },
     "TheatreDesc12": {
       "type": "text"
+    },
+    "Link_Pdf": {
+      "type": "string"
+    },
+    "Link_Pdf2": {
+      "type": "string"
+    },
+    "Link_Pdf3": {
+      "type": "string"
     }
   }
 }
