@@ -131,40 +131,52 @@
       "default": "www.xyz.com"
     },
     "Theatre": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Theatre2": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "theatre3": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Theatre4": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Theatre5": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Theatre6": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Theatre7": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Theatre8": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Theatre9": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Theatre10": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Theatre11": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Theatre12": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "TheatreDesc": {
       "type": "text"
@@ -203,7 +215,8 @@
       "type": "text"
     },
     "Link_Pdf": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Link_Pdf2": {
       "type": "string"
