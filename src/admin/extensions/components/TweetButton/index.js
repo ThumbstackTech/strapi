@@ -10,7 +10,7 @@ const TweetButton = () => {
     const allowedTypes = ["final-igypsy-destination"]
 
     const handleClick = () => {
-        const url = `https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=wa.me?${encodeURIComponent(modifiedData.title)}`;
+        const url = `https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=wa.me?${encodeURIComponent(modifiedData.Destination_Code_City)}`;
         window.open(url);
     }
 
