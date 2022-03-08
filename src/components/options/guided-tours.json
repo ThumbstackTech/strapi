@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_options_guided_tours",
+  "info": {
+    "displayName": "Guided Tours",
+    "icon": "child"
+  },
+  "options": {},
+  "attributes": {
+    "guideName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

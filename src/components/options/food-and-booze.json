@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_options_food_and_boozes",
+  "info": {
+    "displayName": "Food and Booze",
+    "icon": "bong"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

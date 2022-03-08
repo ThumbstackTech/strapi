@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_options_eating_outs",
+  "info": {
+    "displayName": "Eating Out",
+    "icon": "concierge-bell"
+  },
+  "options": {},
+  "attributes": {
+    "placeToEat": {
+      "type": "string"
+    },
+    "cuisine": {
+      "type": "string"
+    },
+    "ratings": {
+      "type": "string"
+    }
+  }
+}

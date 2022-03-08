@@ -6,8 +6,9 @@ import { useIntl } from "react-intl";
 
 const TweetButton = () => {
     const { formatMessage } = useIntl();
-    const { modifiedData, layout } = useCMEditViewDataManager();
+    const { modifiedData, layout, slug } = useCMEditViewDataManager();
     const allowedTypes = ["final-igypsy-destination"]
+
 
     const handleClick = () => {
         const url = `https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=wa.me?${encodeURIComponent(modifiedData.Destination_Code_City)}`;
@@ -23,7 +24,8 @@ const TweetButton = () => {
     };
 
     return (
-        <Button variant="secondary" onClick={handleClick}>
+        slug == 'api::final-igypsy-destination.final-igypsy-destination'
+        && <Button variant="secondary" onClick={handleClick}>
             {formatMessage(content)}
         </Button>
     );

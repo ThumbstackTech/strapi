@@ -235,6 +235,16 @@
       "relation": "oneToMany",
       "target": "api::food-and-booze.food-and-booze",
       "mappedBy": "final_igypsy_destination"
+    },
+    "Options": {
+      "type": "dynamiczone",
+      "components": [
+        "options.eating-out",
+        "options.food-and-booze",
+        "options.guided-tours",
+        "options.shopping",
+        "options.todo"
+      ]
     }
   }
 }

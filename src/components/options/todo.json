@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_options_todos",
+  "info": {
+    "displayName": "todo",
+    "icon": "city"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
