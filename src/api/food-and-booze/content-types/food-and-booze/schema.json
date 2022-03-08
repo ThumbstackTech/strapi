@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_and_boozes",
+  "info": {
+    "singularName": "food-and-booze",
+    "pluralName": "food-and-boozes",
+    "displayName": "Food and Booze"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "final_igypsy_destination": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::final-igypsy-destination.final-igypsy-destination",
+      "inversedBy": "food_and_boozes"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shoppings",
+  "info": {
+    "singularName": "shopping",
+    "pluralName": "shoppings",
+    "displayName": "Shopping"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "final_igypsy_destination": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::final-igypsy-destination.final-igypsy-destination",
+      "inversedBy": "shoppings"
+    }
+  }
+}

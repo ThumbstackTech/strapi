@@ -223,6 +223,18 @@
     },
     "Link_Pdf3": {
       "type": "string"
+    },
+    "shoppings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shopping.shopping",
+      "mappedBy": "final_igypsy_destination"
+    },
+    "food_and_boozes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::food-and-booze.food-and-booze",
+      "mappedBy": "final_igypsy_destination"
     }
   }
 }
