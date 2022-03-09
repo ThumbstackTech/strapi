@@ -245,6 +245,15 @@
         "options.shopping",
         "options.todo"
       ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "SightSeeing",
+        "FoodandBooze",
+        "GuidedTours",
+        "Shopping"
+      ]
     }
   }
 }
