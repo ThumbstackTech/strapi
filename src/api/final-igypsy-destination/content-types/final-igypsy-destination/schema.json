@@ -224,28 +224,6 @@
     "Link_Pdf3": {
       "type": "string"
     },
-    "shoppings": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::shopping.shopping",
-      "mappedBy": "final_igypsy_destination"
-    },
-    "food_and_boozes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::food-and-booze.food-and-booze",
-      "mappedBy": "final_igypsy_destination"
-    },
-    "Options": {
-      "type": "dynamiczone",
-      "components": [
-        "options.eating-out",
-        "options.food-and-booze",
-        "options.guided-tours",
-        "options.shopping",
-        "options.todo"
-      ]
-    },
     "category": {
       "type": "enumeration",
       "enum": [
@@ -254,6 +232,9 @@
         "GuidedTours",
         "Shopping"
       ]
+    },
+    "town": {
+      "type": "string"
     }
   }
 }

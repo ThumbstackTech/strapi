@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_lists",
+  "info": {
+    "singularName": "category-list",
+    "pluralName": "category-lists",
+    "displayName": "category_list"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
