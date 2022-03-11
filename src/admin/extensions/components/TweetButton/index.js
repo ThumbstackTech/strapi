@@ -11,7 +11,8 @@ const TweetButton = () => {
 
 
     const handleClick = () => {
-        const url = `https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=wa.me?${encodeURIComponent(modifiedData.Destination_Code_City)}`;
+        const url = `https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=https://api.whatsapp.com/send?phone=918097364489&text=Hi,%20I%20want%20to%20know%20about%${encodeURIComponent(modifiedData.NameOfPlace)}%20id%20${encodeURIComponent(modifiedData.Content_code)}`
+
         window.open(url);
     }
 
