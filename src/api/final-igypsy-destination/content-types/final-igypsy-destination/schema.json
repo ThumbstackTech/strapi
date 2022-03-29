@@ -59,24 +59,6 @@
       "type": "string",
       "required": true
     },
-    "FoodType": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::name.name",
-      "mappedBy": "final_igypsy_destination"
-    },
-    "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category",
-      "mappedBy": "final_igypsy_destination"
-    },
-    "links": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::link.link",
-      "mappedBy": "final_igypsy_destinations"
-    },
     "Content": {
       "type": "media",
       "multiple": true,
@@ -106,24 +88,6 @@
     "NameOfPlace": {
       "type": "string",
       "required": true
-    },
-    "theaters": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::theater.theater",
-      "mappedBy": "final_igypsy_destination"
-    },
-    "sight_seeings": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::sight-seeing.sight-seeing",
-      "mappedBy": "final_igypsy_destination"
-    },
-    "tours": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tour.tour",
-      "mappedBy": "final_igypsy_destination"
     },
     "Link_Url": {
       "type": "string",
