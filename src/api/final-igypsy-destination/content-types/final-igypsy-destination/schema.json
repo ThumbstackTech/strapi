@@ -59,16 +59,6 @@
       "type": "string",
       "required": true
     },
-    "Content": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
-    },
     "ExpertRating": {
       "type": "integer",
       "required": true,
