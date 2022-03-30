@@ -22,12 +22,6 @@
       "unique": true,
       "required": true
     },
-    "Cost": {
-      "type": "biginteger"
-    },
-    "Time_Needed_in_hrs": {
-      "type": "integer"
-    },
     "Public_Transport": {
       "type": "string",
       "required": true
