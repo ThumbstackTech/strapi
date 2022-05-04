@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_link_links",
+  "info": {
+    "displayName": "links",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

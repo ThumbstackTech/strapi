@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Destination_Code_City": {
+    "city": {
       "type": "string",
       "required": true,
       "unique": false
@@ -99,6 +99,12 @@
     },
     "town": {
       "type": "string"
+    },
+    "qrb": {
+      "displayName": "qrb",
+      "type": "component",
+      "repeatable": true,
+      "component": "qrb.qrb"
     }
   }
 }

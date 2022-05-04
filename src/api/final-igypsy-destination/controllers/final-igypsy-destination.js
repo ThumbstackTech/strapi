@@ -1,9 +1,27 @@
-'use strict';
+const { createCoreController } = require("@strapi/strapi").factories;
 
-/**
- *  final-igypsy-destination controller
- */
+module.exports = createCoreController(
+    "api::final-igypsy-destination.final-igypsy-destination",
+    ({ strapi }) => ({
+        async find(ctx) {
+            (ctx.query = {
+                ...ctx.query,
+                populate: {
+                    Qrb: {
+                        fields: ["title", "description"],
+                        populate: {
+                            Link: {
+                                fields: ["title", "description", "link"]
+                            }
+                        }
+                    }
+                }
+            })
+                // Calling the default core action
 
-const { createCoreController } = require('@strapi/strapi').factories;
+                ({ data, meta } = await super.find(ctx));
 
-module.exports = createCoreController('api::final-igypsy-destination.final-igypsy-destination');
+            return { data, meta };
+        },
+    })
+);

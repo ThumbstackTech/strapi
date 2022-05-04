@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_qrb_qrbs",
+  "info": {
+    "displayName": "qrb",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "displayName": "links",
+      "type": "component",
+      "repeatable": true,
+      "component": "link.links"
+    }
+  }
+}
